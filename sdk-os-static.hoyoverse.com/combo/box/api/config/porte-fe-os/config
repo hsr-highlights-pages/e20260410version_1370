@@ -1,0 +1,11 @@
+{
+    "retcode": 0,
+    "message": "OK",
+    "data": {
+        "vals": {
+            "enableV2XLogin": "true",
+            "enableDomainRedirect": "true",
+            "enableLegacyExemptions": "true"
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "btn1": "HoYoverse通行証で\u003c/br\u003eログイン",
+    "btn2": "UIDでログイン",
+    "btn3": "認証コード取得",
+    "btn4": "送信済み({x}s)",
+    "cancelBtn": "キャンセル",
+    "changedPromptConfirm": "確認",
+    "changedPromptTip": "現在の通行証アカウントが切り替わりました、新しい通行証のゲームデータに切り替えますか？",
+    "codeToast": "認証コードをキャラクターのゲーム内メールにお送りいたしました（有効期限：10分）",
+    "confirmBtn": "OK",
+    "invalidPromptConfirm": "再ログイン",
+    "invalidPromptTip": "通行証ログインが失効しました。ゲームデータを切り替えるには、もう一度ログインしてください",
+    "loginBtn": "ログイン",
+    "loginTip": "",
+    "placeholder1": "サーバーを選択してください",
+    "placeholder2": "UIDを入力してください",
+    "placeholder3": "開拓レベルをご入力ください",
+    "placeholder4": "認証コードを入力してください",
+    "switchTip": "ログイン方法をお選びください"
+}

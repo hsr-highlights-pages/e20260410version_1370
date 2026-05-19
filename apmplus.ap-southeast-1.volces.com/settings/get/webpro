@@ -1,0 +1,131 @@
+{
+    "err_detail": "",
+    "data": {
+        "sample": {
+            "sample_rate": 1,
+            "include_users": [],
+            "sample_granularity": "session",
+            "rules": [
+                {
+                    "name": "js_error",
+                    "enable": true,
+                    "sample_rate": 1,
+                    "conditional_sample_rules": [
+                        {
+                            "sample_rate": 0,
+                            "filter": {
+                                "type": "and",
+                                "children": [
+                                    {
+                                        "type": "rule",
+                                        "field": "payload.error.message",
+                                        "op": "regex",
+                                        "groupKey": "",
+                                        "values": [
+                                            "reportWebTTI",
+                                            "samerole",
+                                            "Network Error",
+                                            "Script error",
+                                            "Abort due to cancellation of share",
+                                            "can only be initiated by a user gesture",
+                                            "^me_ani_",
+                                            "The operation was aborted",
+                                            "The play\\(\\) request was interrupted",
+                                            "活动已结束",
+                                            "Failed to start the audio device",
+                                            "字体配置文件请求失败",
+                                            "微信签名返回失败",
+                                            "isTrusted",
+                                            "Vue is not defined",
+                                            "Failed to execute .* on 'AudioParam'",
+                                            "SecurityError",
+                                            "\"retcode\":-100[^0-9]",
+                                            "NetworkError Failed to execute 'send' on 'XMLHttpRequest': Failed to load './webstatic.hoyoverse.com/admin/mi18n/",
+                                            "ReferenceError Can't find variable: __firefox__",
+                                            " TypeError undefined is not an object (evaluating 'window.ethereum",
+                                            "ReferenceError Can't find variable: __gCrWeb",
+                                            "AbortError Abort due to cancellation of share.",
+                                            "UnhandledRejection {\"isTrusted\":true}",
+                                            "The play method is not allowed by the user agent",
+                                            "runtime.sendMessage()",
+                                            "fontConfig",
+                                            "@me/dynamic-font",
+                                            "{\"retcode\":-100002,\"message\":\"close\"}",
+                                            "\"retcode\":-100}",
+                                            "\"retcode\":-100\\}",
+                                            "\\{\"isTrusted\":true\\}"
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "http",
+                    "enable": true,
+                    "sample_rate": 0.00001,
+                    "conditional_sample_rules": []
+                },
+                {
+                    "name": "performance",
+                    "enable": true,
+                    "sample_rate": 0.001,
+                    "conditional_sample_rules": []
+                },
+                {
+                    "name": "resource_error",
+                    "enable": true,
+                    "sample_rate": 0.1,
+                    "conditional_sample_rules": []
+                },
+                {
+                    "name": "resource",
+                    "enable": true,
+                    "sample_rate": 3e-8,
+                    "conditional_sample_rules": []
+                },
+                {
+                    "name": "custom",
+                    "enable": true,
+                    "sample_rate": 0.001,
+                    "conditional_sample_rules": []
+                },
+                {
+                    "name": "performance_timing",
+                    "enable": true,
+                    "sample_rate": 0.001,
+                    "conditional_sample_rules": []
+                },
+                {
+                    "name": "performance_longtask",
+                    "enable": true,
+                    "sample_rate": 0.0001,
+                    "conditional_sample_rules": []
+                },
+                {
+                    "name": "pageview",
+                    "enable": true,
+                    "sample_rate": 1,
+                    "conditional_sample_rules": []
+                },
+                {
+                    "name": "action",
+                    "enable": true,
+                    "sample_rate": 0.001,
+                    "conditional_sample_rules": []
+                },
+                {
+                    "name": "blank_screen",
+                    "enable": true,
+                    "sample_rate": 0.5,
+                    "conditional_sample_rules": []
+                }
+            ]
+        },
+        "status": 0,
+        "timestamp": 1779126617951
+    },
+    "error_msg": "success",
+    "error_no": 0
+}
